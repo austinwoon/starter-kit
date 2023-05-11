@@ -8,8 +8,7 @@
 
 import { trace, context } from '@opentelemetry/api'
 import { registerOTel } from '@vercel/otel'
-import { browserEnv } from '~/browserEnv'
 
-registerOTel(browserEnv.NEXT_PUBLIC_APP_NAME)
+registerOTel('Starter Kit')
 
 export { trace, context }
